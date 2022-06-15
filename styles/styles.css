@@ -78,13 +78,13 @@
     box-shadow: 2px 1px 15px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 2px 1px 15px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 2px 1px 15px 0px rgba(0, 0, 0, 0.75);
-
-
+    transition: all 2s;
+    
 
 }
 
 .btn:hover {
-
+    transform: translate(0,10px);
     background-color: rgb(167, 156, 156);
     color: #131216;
 }
@@ -102,8 +102,14 @@ h1 {
     justify-content: center;
     font-family: 'Kanit', sans-serif;
     padding: 1rem 0;
+    animation-duration: 5s;
+    animation-name: titulo;
+    animation-iteration-count: infinite;
 }
-
+@keyframes titulo{
+    from{background-color: rgb(41, 255, 255);}
+    to{background-color: rgb(219, 255, 255);}
+}
 .carrousel {
     display: flex;
     flex-wrap: wrap;
@@ -141,13 +147,14 @@ h1 {
 }
 
 .mainContent__title {
-    background-color: aqua;
+    background-image: linear-gradient(rgb(0, 255, 255),rgb(14, 66, 66));
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     font-family: 'Kanit', sans-serif;
     font-size: 25px;
+    
 }
 
 .cards {
@@ -158,7 +165,7 @@ h1 {
 }
 
 .card {
-    background-color: blueviolet;
+    background-image: linear-gradient(rgb(126, 19, 226),rgb(60, 19, 99));
     padding: 20px;
     border-radius: 10px;
     display: flex;
@@ -168,10 +175,16 @@ h1 {
 
 .card__img {
     width: 100%;
+    transition: width 1s;
+}
+.card__img:hover{
+    width: 105%;
+
 }
 
 .card__title {
     font-family: 'Kanit', sans-serif;
+    text-transform: capitalize;
 }
 
 .card a {
@@ -183,7 +196,7 @@ h1 {
 
 .footer {
     grid-area: footer;
-    background-color: rgb(34, 75, 75);
+    background-image: linear-gradient(rgb(34,75,75),rgb(12, 27, 27));
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
