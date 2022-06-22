@@ -32,39 +32,11 @@
         display: flex;
         flex-direction: column;
     }
-    .cards2{
+
+    .cards2 {
         display: flex;
         flex-direction: column;
     }
-}
-
-.header {
-    background-color: rgb(225, 231, 236);
-    grid-area: header;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    height: 12rem;
-    flex: 1;
-}
-
-.logo {
-    font-family: 'Kanit', sans-serif;
-    font-size: 20px;
-    margin-left: 1rem;
-}
-
-.header__lista {
-    margin-right: 1rem;
-    width: 650px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    list-style: none;
-    font-size: 18px;
-
 }
 
 .btn {
@@ -79,12 +51,12 @@
     -webkit-box-shadow: 2px 1px 15px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 2px 1px 15px 0px rgba(0, 0, 0, 0.75);
     transition: all 2s;
-    
+
 
 }
 
 .btn:hover {
-    transform: translate(0,10px);
+    transform: translate(0, 10px);
     background-color: rgb(167, 156, 156);
     color: #131216;
 }
@@ -106,15 +78,15 @@ h1 {
     animation-name: titulo;
     animation-iteration-count: infinite;
 }
-@keyframes titulo{
-    from{background-color: rgb(41, 255, 255);}
-    to{background-color: rgb(219, 255, 255);}
-}
-.carrousel {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: blueviolet;
-    justify-content: space-around;
+
+@keyframes titulo {
+    from {
+        background-color: rgb(41, 255, 255);
+    }
+
+    to {
+        background-color: rgb(219, 255, 255);
+    }
 }
 
 .section {
@@ -147,14 +119,14 @@ h1 {
 }
 
 .mainContent__title {
-    background-image: linear-gradient(rgb(0, 255, 255),rgb(14, 66, 66));
+    background-image: linear-gradient(rgb(0, 255, 255), rgb(14, 66, 66));
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     font-family: 'Kanit', sans-serif;
     font-size: 25px;
-    
+
 }
 
 .cards {
@@ -165,7 +137,7 @@ h1 {
 }
 
 .card {
-    background-image: linear-gradient(rgb(126, 19, 226),rgb(60, 19, 99));
+    background-image: linear-gradient(rgb(126, 19, 226), rgb(60, 19, 99));
     padding: 20px;
     border-radius: 10px;
     display: flex;
@@ -177,7 +149,8 @@ h1 {
     width: 100%;
     transition: width 1s;
 }
-.card__img:hover{
+
+.card__img:hover {
     width: 105%;
 
 }
@@ -196,7 +169,7 @@ h1 {
 
 .footer {
     grid-area: footer;
-    background-image: linear-gradient(rgb(34,75,75),rgb(12, 27, 27));
+    background-image: linear-gradient(rgb(34, 75, 75), rgb(12, 27, 27));
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
