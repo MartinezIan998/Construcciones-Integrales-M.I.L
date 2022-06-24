@@ -67,7 +67,7 @@
     flex: 1;
 }
 
-h1 {
+.titulo {
 
     display: flex;
     flex-wrap: wrap;
