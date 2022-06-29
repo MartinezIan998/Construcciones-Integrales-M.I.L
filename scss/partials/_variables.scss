@@ -1,0 +1,19 @@
+.btn {
+    background-color: #c9c9c9;
+    padding: 2px;
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    border: none;
+    border-radius: 1rem;
+    text-transform: capitalize;
+    box-shadow: 2px 1px 15px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 1px 15px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 1px 15px 0px rgba(0, 0, 0, 0.75);
+    transition: all 2s;
+}
+
+.btn:hover {
+    transform: translate(0, 10px);
+    background-color: rgb(167, 156, 156);
+    color: #131216;
+}

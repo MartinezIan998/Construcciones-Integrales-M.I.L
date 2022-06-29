@@ -1,0 +1,24 @@
+{
+  "name": "construcciones-integrales-m.i.l-martinez-ian",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartinezIan998/Construcciones-Integrales-M.I.L.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MartinezIan998/Construcciones-Integrales-M.I.L/issues"
+  },
+  "homepage": "https://github.com/MartinezIan998/Construcciones-Integrales-M.I.L#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.18"
+  }
+}

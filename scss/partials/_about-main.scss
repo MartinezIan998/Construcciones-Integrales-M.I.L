@@ -1,0 +1,26 @@
+.mainAbout__div {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 2px;
+    top: 250px;
+}
+.mainAbout__section {
+    border: none;
+    border-radius: 20px;
+    padding: 1rem;
+    margin-top: 5rem;
+    background-image: linear-gradient(to top, rgb(4, 153, 133), rgb(115, 192, 192));
+
+    .mainAbout__title {
+        display: flex;
+        justify-content: center;
+        font-family: "Kanit", sans-serif;
+    }
+
+    .mainAbout__article {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: "Kanit", sans-serif;
+    }
+}

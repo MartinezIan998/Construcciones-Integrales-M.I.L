@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kanit:ital,wght@1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grilla {
+  display: grid;
+  grid-template-areas: "header" "header" "header" "header" "main" "main" "main" "main" "main" "main" "main" "main" "footer" "footer" "footer" "footer";
+}
+
+@media screen and (max-width: 768px) {
+  .grilla {
+    display: flex;
+    flex-direction: column;
+  }
+  .header__lista {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .cards2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.btn {
+  background-color: #c9c9c9;
+  padding: 2px;
+  text-decoration: none;
+  color: rgb(8, 8, 8);
+  border: none;
+  border-radius: 1rem;
+  text-transform: capitalize;
+  box-shadow: 2px 1px 15px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 1px 15px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 1px 15px 0px rgba(0, 0, 0, 0.75);
+  transition: all 2s;
+}
+
+.btn:hover {
+  transform: translate(0, 10px);
+  background-color: rgb(167, 156, 156);
+  color: #131216;
+}
+
+.container-fluid {
+  background-image: linear-gradient(to bottom, rgb(14, 226, 226), rgb(8, 92, 107));
+}
+.container-fluid .navbar-brand {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.5rem;
+}
+
+.main {
+  grid-area: main;
+  padding: 10px;
+  flex: 1;
+}
+.main .titulo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Kanit", sans-serif;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+.main .section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Kanit", sans-serif;
+  border: #bebec0 solid 1px;
+  border-radius: 20px;
+  padding: 2rem;
+  margin-top: 1rem;
+}
+.main .consultenos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.main .mainContent {
+  background-color: azure;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+.main .mainContent .mainContent__title {
+  background-image: linear-gradient(rgb(0, 255, 255), rgb(14, 66, 66));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  font-family: "Kanit", sans-serif;
+  font-size: 25px;
+}
+.main .mainContent .cards {
+  display: flex;
+  padding: 10px;
+  gap: 20px;
+}
+.main .mainContent .cards .card {
+  background-image: linear-gradient(rgb(126, 19, 226), rgb(60, 19, 99));
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main .mainContent .cards .card .card__img {
+  width: 100%;
+  transition: width 1s;
+}
+.main .mainContent .cards .card .card__img:hover {
+  width: 105%;
+}
+.main .mainContent .cards .card .card__title {
+  font-family: "Kanit", sans-serif;
+  text-transform: capitalize;
+}
+.main .mainContent .cards .card a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer {
+  grid-area: footer;
+  background-image: linear-gradient(rgb(34, 75, 75), rgb(12, 27, 27));
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 20p;
+  flex: 1;
+  padding: 1rem;
+  color: rgb(190, 188, 188);
+}
+.footer .footer__article {
+  font-family: "Kanit", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+.footer .footer__article .footer__direction {
+  font-family: "Kanit", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.footer .footer__article h4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mainContact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 3rem 0;
+}
+.mainContact .mainContact__section {
+  background-image: linear-gradient(to left, rgb(26, 219, 219), rgb(156, 156, 21));
+  border: none;
+  border-radius: 20px;
+  font-family: "Kanit", sans-serif;
+  text-transform: capitalize;
+  padding: 1rem;
+}
+.mainContact .mainContact__section .mainContact__form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.mainContact .mainContact__section .mainContact__form .si__no {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.mainGalery {
+  background-image: linear-gradient(to left, rgba(18, 194, 185, 0.801), rgba(22, 64, 70, 0.87));
+  padding: 2rem 0;
+}
+.mainGalery .mainGalery__title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  font-family: "Dancing Script", cursive;
+  color: #ffffff;
+}
+.mainGalery .mainGalery__images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.mainAbout__div {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 2px;
+  top: 250px;
+}
+
+.mainAbout__section {
+  border: none;
+  border-radius: 20px;
+  padding: 1rem;
+  margin-top: 5rem;
+  background-image: linear-gradient(to top, rgb(4, 153, 133), rgb(115, 192, 192));
+}
+.mainAbout__section .mainAbout__title {
+  display: flex;
+  justify-content: center;
+  font-family: "Kanit", sans-serif;
+}
+.mainAbout__section .mainAbout__article {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Kanit", sans-serif;
+}
+
+.cards2 {
+  display: flex;
+  width: 90%;
+  border-radius: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  padding: 2rem 0rem 3rem 4rem;
+  margin: 2rem;
+  box-shadow: 22px 0px 23px 0px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 22px 0px 23px 0px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 22px 0px 23px 0px rgba(0, 0, 0, 0.45);
+}
+.cards2 h3 {
+  font-family: "Kanit", sans-serif;
+}
+.cards2 .card-img img {
+  border-radius: 10px;
+  width: 90%;
+  transition: height 1s, width 1s;
+}
+.cards2 .card-img img:hover {
+  height: 91%;
+  width: 91%;
+}
+
+/*# sourceMappingURL=main.css.map */
