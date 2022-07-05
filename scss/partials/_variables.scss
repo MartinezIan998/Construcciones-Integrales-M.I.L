@@ -1,3 +1,33 @@
+/* Variable*/
+$fuente-texto: "Kanit", sans-serif;
+/*maps*/
+$estilos: (
+    color: linear-gradient(rgb(0, 255, 255), rgb(14, 66, 66)),
+
+);
+/*agrego extend*/
+%flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+};
+
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+
+
+
+
+
+
+
+
+
+
 .btn {
     background-color: #c9c9c9;
     padding: 2px;

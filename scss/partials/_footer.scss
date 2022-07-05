@@ -11,7 +11,7 @@
     color: rgb(190, 188, 188);
 
     .footer__article {
-        font-family: "Kanit", sans-serif;
+        font-family:$fuente-texto;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -20,7 +20,7 @@
         padding: 1rem 0;
 
         .footer__direction {
-            font-family: "Kanit", sans-serif;
+            font-family: $fuente-texto;
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;

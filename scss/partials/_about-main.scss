@@ -1,11 +1,12 @@
+/*agrego mixin*/
 .mainAbout__div {
-    width: 50px;
-    height: 50px;
+    @include sizes(50px , 50px);
     position: fixed;
     right: 2px;
     top: 250px;
 }
 .mainAbout__section {
+    
     border: none;
     border-radius: 20px;
     padding: 1rem;
@@ -15,12 +16,12 @@
     .mainAbout__title {
         display: flex;
         justify-content: center;
-        font-family: "Kanit", sans-serif;
+        font-family: $fuente-texto;
     }
 
     .mainAbout__article {
         font-size: 18px;
         font-weight: bold;
-        font-family: "Kanit", sans-serif;
+        font-family: $fuente-texto;
     }
 }
